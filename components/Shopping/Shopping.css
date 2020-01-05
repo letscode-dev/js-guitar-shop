@@ -1,0 +1,36 @@
+.shopping-container {
+	width: 97%;
+	height: 97vh;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	padding: var(--spacing-large);
+	background: var(--color-white);
+	box-shadow: var(--box-shadow);
+}
+.shopping-element {
+	margin-bottom: var(--spacing-small);
+	padding: var(--spacing-small);
+}
+.shopping-element__name {
+	padding: var(--spacing-medium);
+	font-weight: bold;
+}
+.shopping-element__price {
+	padding: var(--spacing-medium);
+	color: var(--color-unaccent);
+}
+.shopping__close {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	top: 20px;
+	right: 20px;
+	background-image: url(img/close.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	cursor: pointer;
+}
