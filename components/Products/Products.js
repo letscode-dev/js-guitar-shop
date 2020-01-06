@@ -39,7 +39,7 @@ class Products {
             }
 
             htmlCatalog += `
-                <div class="products-element">
+                <li class="products-element">
                     <div class="products-element__name">${name}</div>
                     <img class="products-element__img" src="${img}" />
                     <span class="products-element__price">
@@ -48,14 +48,14 @@ class Products {
                     <button class="products-element__btn${activeClass}" onclick="productsPage.handlerSetLocatStorage(this, '${id}');">
                         ${activeText}
                     </button>
-                </div>
+                </li>
             `;
         });
 
         const html = `
-            <div class="products-container">
+            <ul class="products-container">
                 ${htmlCatalog}
-            </div>
+            </ul>
         `;
 
         ROOT_PRODUCTS.innerHTML = html;
