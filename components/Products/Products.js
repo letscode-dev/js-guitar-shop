@@ -10,9 +10,9 @@ class Products {
     }
 
     handlerSetLocatStorage(element, id) {
-        const result = localStorageUtil.putProducts(id);
+        const { pushProduct, products } = localStorageUtil.putProducts(id);
 
-        if (result.pushProduct) {
+        if (pushProduct) {
             element.classList.add(this.classNameActive);
             element.innerText = this.labelRemove;
         } else {
@@ -20,7 +20,7 @@ class Products {
             element.innerText = this.labelAdd;
         }
 
-        headerPage.render(result.products.length);
+        headerPage.render(products.length);
     }
 
     render() {
