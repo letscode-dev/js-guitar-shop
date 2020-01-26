@@ -30,10 +30,8 @@ body {
 
 ::-webkit-scrollbar {
 	width: 8px;
-	height: 8px;
 }
 ::-webkit-scrollbar-thumb {
-	height: 50px;
 	background-color: var(--color-dark);
 	border-radius: 5px;
 }

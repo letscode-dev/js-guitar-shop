@@ -10,10 +10,6 @@
 	background: var(--color-white);
 	box-shadow: var(--box-shadow);
 }
-.shopping-element {
-	margin-bottom: var(--spacing-small);
-	padding: var(--spacing-small);
-}
 .shopping-element__name {
 	padding: var(--spacing-medium);
 	font-weight: bold;
