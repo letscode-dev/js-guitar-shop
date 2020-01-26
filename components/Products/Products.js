@@ -1,7 +1,3 @@
-// import { ROOT_PRODUCTS }    from '/constants/root.js';
-// import { CATALOG }          from '/constants/catalog.js';
-// import { localStorageUtil } from 'utils/localStorageUtil.js';
-
 class Products {
     constructor() {
         this.classNameActive = 'products-element__btn_active';
@@ -9,15 +5,15 @@ class Products {
         this.labelRemove = 'Удалить из корзины';
     }
 
-    handlerSetLocatStorage(element, id) {
+    handleSetLocationStorage(element, id) {
         const { pushProduct, products } = localStorageUtil.putProducts(id);
-
+        
         if (pushProduct) {
             element.classList.add(this.classNameActive);
-            element.innerText = this.labelRemove;
+            element.innerHTML = this.labelRemove;
         } else {
             element.classList.remove(this.classNameActive);
-            element.innerText = this.labelAdd;
+            element.innerHTML = this.labelAdd;
         }
 
         headerPage.render(products.length);
@@ -34,7 +30,7 @@ class Products {
             if (productsStore.indexOf(id) === -1) {
                 activeText = this.labelAdd;
             } else {
-                activeClass = ' ' + this.classNameActive;
+                activeClass = ' '+this.classNameActive;
                 activeText = this.labelRemove;
             }
 
@@ -45,7 +41,7 @@ class Products {
                     <span class="products-element__price">
                         ⚡️ ${price.toLocaleString()} USD
                     </span>
-                    <button class="products-element__btn${activeClass}" onclick="productsPage.handlerSetLocatStorage(this, '${id}');">
+                    <button class="products-element__btn${activeClass}" onclick="productsPage.handleSetLocationStorage(this, '${id}');">
                         ${activeText}
                     </button>
                 </li>
@@ -60,7 +56,7 @@ class Products {
 
         ROOT_PRODUCTS.innerHTML = html;
     }
-};
+}
 
 const productsPage = new Products();
 productsPage.render();

@@ -1,9 +1,5 @@
-// import { ROOT_SHOPPING }    from '/constants/root.js';
-// import { CATALOG }          from '/constants/catalog.js';
-// import { localStorageUtil } from 'utils/localStorageUtil.js';
-
 class Shopping {
-    handlerClear() {
+    handleClear() {
         ROOT_SHOPPING.innerHTML = '';
     }
 
@@ -18,7 +14,7 @@ class Shopping {
                     <tr>
                         <td class="shopping-element__name">⚡️ ${name}</td>
                         <td class="shopping-element__price">${price.toLocaleString()} USD</td>
-                    </td>
+                    </tr>
                 `;
                 sumCatalog += price;
             }
@@ -26,7 +22,7 @@ class Shopping {
 
         const html = `
             <div class="shopping-container">
-                <div class="shopping__close" onclick="shoppingPage.handlerClear();"></div>
+                <div class="shopping__close" onclick="shoppingPage.handleClear();"></div>
                 <table>
                     ${htmlCatalog}
                     <tr>
@@ -36,9 +32,8 @@ class Shopping {
                 </table>
             </div>
         `;
-
         ROOT_SHOPPING.innerHTML = html;
     }
-};
+}
 
 const shoppingPage = new Shopping();
