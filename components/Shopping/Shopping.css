@@ -7,7 +7,7 @@
 	transform: translate(-50%, -50%);
 	margin: auto;
 	padding: var(--spacing-large);
-	background: var(--color-white);
+	background-color: var(--color-white);
 	box-shadow: var(--box-shadow);
 }
 .shopping-element__name {
