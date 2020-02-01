@@ -1,7 +1,3 @@
-// import { ROOT_HEADER }      from '/constants/root.js';
-// import { shoppingPage }     from 'components/Shopping/Shopping.js';
-// import { localStorageUtil } from 'utils/localStorageUtil.js';
-
 class Header {
     handlerOpenShoppingPage() {
         shoppingPage.render();
@@ -21,6 +17,3 @@ class Header {
 };
 
 const headerPage = new Header();
-
-const productsStore = localStorageUtil.getProducts();
-headerPage.render(productsStore.length);

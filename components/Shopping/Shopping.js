@@ -1,7 +1,3 @@
-// import { ROOT_SHOPPING }    from '/constants/root.js';
-// import { CATALOG }          from '/constants/catalog.js';
-// import { localStorageUtil } from 'utils/localStorageUtil.js';
-
 class Shopping {
     handlerClear() {
         ROOT_SHOPPING.innerHTML = '';

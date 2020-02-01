@@ -1,7 +1,3 @@
-// import { ROOT_PRODUCTS }    from '/constants/root.js';
-// import { CATALOG }          from '/constants/catalog.js';
-// import { localStorageUtil } from 'utils/localStorageUtil.js';
-
 class Products {
     constructor() {
         this.classNameActive = 'products-element__btn_active';
@@ -63,4 +59,3 @@ class Products {
 };
 
 const productsPage = new Products();
-productsPage.render();
