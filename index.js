@@ -7,7 +7,7 @@ function render() {
 
 spinnerPage.render();
 
-let CATALOG = 0;
+let CATALOG = [];
 
 // https://api.myjson.com/bins/jvsbu
 fetch('server/catalog.json')
