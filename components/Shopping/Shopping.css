@@ -1,12 +1,12 @@
 .shopping-container {
-	width: 97%;
-	height: 97vh;
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	width: 97%;
+	height: 97vh;
 	margin: auto;
 	padding: var(--spacing-large);
+	transform: translate(-50%, -50%);
 	background-color: var(--color-white);
 	box-shadow: var(--box-shadow);
 }
@@ -20,10 +20,10 @@
 }
 .shopping__close {
 	position: absolute;
-	width: 35px;
-	height: 35px;
 	top: 20px;
 	right: 20px;
+	width: 35px;
+	height: 35px;
 	background-image: url(img/close.svg);
 	background-repeat: no-repeat;
 	background-position: center center;

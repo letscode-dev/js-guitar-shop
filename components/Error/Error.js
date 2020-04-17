@@ -3,7 +3,7 @@ class Error {
         const html = `
         	<div class="error-container">
                 <div class="error-message">
-                    <h3>Не удается получить доступ</h3>
+                    <h3>Нет доступа!</h3>
                     <p>Попробуйти зайти позже</p>
                 </div>
         	</div>

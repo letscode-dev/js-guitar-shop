@@ -12,13 +12,13 @@
 	justify-content: flex-end;
 	padding: 25px 20px;
 	border-radius: var(--border-radius);
-	box-shadow: var(--box-shadow);
 	background-color: var(--color-white);
+	box-shadow: var(--box-shadow);
 }
 .products-element__name {
-	font-weight: bold;
-	text-transform: uppercase;
 	margin-bottom: auto;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 .products-element__img {
 	width: 100%;

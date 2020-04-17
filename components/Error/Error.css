@@ -6,10 +6,11 @@
 	height: 100vh;
 }
 .error-message {
+	min-width: 400px;
 	padding: 20px 40px;
+	border-left: 7px solid var(--color-error-dark);
 	text-align: center;
 	background-color: var(--color-error-light);
-	box-shadow: var(--box-shadow);
 	color: var(--color-white);
-	border-left: 7px solid var(--color-error-dark);
+	box-shadow: var(--box-shadow);
 }

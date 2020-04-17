@@ -13,11 +13,14 @@ let CATALOG = [];
 fetch('server/catalog.json')
     .then(res => res.json())
     .then(body => {
-    	CATALOG = body;
-    	spinnerPage.handleClear();
-		render();
+		CATALOG = body;
+
+		setTimeout(() => {
+			spinnerPage.handleClear();
+			render();
+		}, 1000);
     })
-    .catch(error => {
+    .catch(() => {
         spinnerPage.handleClear();
     	errorPage.render();
     })
