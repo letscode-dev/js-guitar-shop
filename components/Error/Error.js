@@ -1,12 +1,12 @@
 class Error {
     render() {
         const html = `
-        	<div class="error-container">
+            <div class="error-container">
                 <div class="error-message">
-                    <h3>Не удается получить доступ</h3>
-                    <p>Попробуйти зайти позже</p>
+                    <h3>Нет доступа!</h3>
+                    <p>Попробуйте зайти позже</p>
                 </div>
-        	</div>
+            </div>
         `;
 
         ROOT_ERROR.innerHTML = html;

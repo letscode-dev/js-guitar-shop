@@ -1,5 +1,5 @@
 class Shopping {
-    handlerClear() {
+    handleClear() {
         ROOT_SHOPPING.innerHTML = '';
     }
 
@@ -22,7 +22,7 @@ class Shopping {
 
         const html = `
             <div class="shopping-container">
-                <div class="shopping__close" onclick="shoppingPage.handlerClear();"></div>
+                <div class="shopping__close" onclick="shoppingPage.handleClear();"></div>
                 <table>
                     ${htmlCatalog}
                     <tr>
@@ -32,9 +32,8 @@ class Shopping {
                 </table>
             </div>
         `;
-
         ROOT_SHOPPING.innerHTML = html;
     }
-};
+}
 
 const shoppingPage = new Shopping();
