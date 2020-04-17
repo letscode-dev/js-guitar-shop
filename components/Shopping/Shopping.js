@@ -14,7 +14,7 @@ class Shopping {
                     <tr>
                         <td class="shopping-element__name">⚡️ ${name}</td>
                         <td class="shopping-element__price">${price.toLocaleString()} USD</td>
-                    </td>
+                    </tr>
                 `;
                 sumCatalog += price;
             }
